@@ -1,0 +1,61 @@
+{
+  "servers": {
+    "2021": {
+      "name": "CITD - Programa Juana Manso",
+      "server": "citd.dgp.educ.ar",
+      "version": "citd_v1",
+      "description": "Sistema de desbloqueo para equipos entregados en 2021",
+      "requires_internet": true,
+      "validation_endpoint": "https://citd.dgp.educ.ar/validate",
+      "support_url": "https://conectarigualdad.gob.ar/soporte"
+    },
+    "2022": {
+      "name": "CITD - Programa Juana Manso",
+      "server": "citd.dgp.educ.ar",
+      "version": "citd_v1",
+      "description": "Sistema de desbloqueo para equipos entregados en 2022",
+      "requires_internet": true,
+      "validation_endpoint": "https://citd.dgp.educ.ar/validate",
+      "support_url": "https://conectarigualdad.gob.ar/soporte"
+    },
+    "2023": {
+      "name": "TDS - Conectar Igualdad",
+      "server": "tds.educacion.gob.ar",
+      "version": "tds_v2",
+      "description": "Sistema de desbloqueo para equipos entregados en 2023",
+      "requires_internet": true,
+      "validation_endpoint": "https://tds.educacion.gob.ar/api/validate",
+      "support_url": "https://conectarigualdad.gob.ar/soporte"
+    }
+  },
+  "provinces": {
+    "buenos_aires": {
+      "name": "Buenos Aires",
+      "official_form": "https://abc.gob.ar/conectar-igualdad/desbloqueo",
+      "contact_email": "soporte.ci@abc.gob.ar"
+    },
+    "san_juan": {
+      "name": "San Juan",
+      "official_form": "https://turnos.sanjuan.gob.ar/",
+      "address": "9 de Julio 1515 este, Santa Lucía",
+      "contact_phone": "+54 264 xxx-xxxx"
+    },
+    "neuquen": {
+      "name": "Neuquén",
+      "official_form": "https://sites.google.com/view/desbloqueosneuquen/",
+      "contact_email": "soporte.ci@neuquen.edu.ar"
+    },
+    "generic": {
+      "name": "Otras Provincias",
+      "official_form": "https://conectarigualdad.gob.ar/desbloqueo",
+      "contact_email": "soporte@conectarigualdad.gob.ar",
+      "contact_phone": "0800-333-CONECTAR"
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2024-10-26",
+    "description": "Configuración de servidores y provincias para DESBLOCK-NET"
+  }
+}
+

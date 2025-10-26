@@ -1,0 +1,31 @@
+# DESBLOCK-NET - Dependencias Python
+# 
+# Este proyecto utiliza principalmente módulos estándar de Python
+# para maximizar la compatibilidad y facilitar el despliegue.
+
+# Módulos estándar utilizados (incluidos con Python):
+# - tkinter: Interfaz gráfica
+# - hashlib: Generación de códigos de desbloqueo
+# - json: Manejo de configuraciones
+# - datetime: Gestión de fechas y logs
+# - subprocess: Ejecución de comandos del sistema
+# - pathlib: Manejo de rutas
+# - argparse: Interfaz de línea de comandos
+
+# No se requieren paquetes externos adicionales para la funcionalidad básica
+
+# Dependencias opcionales para características avanzadas:
+# requests>=2.31.0  # Para verificación de conectividad y actualizaciones
+# cryptography>=41.0.0  # Para funciones de seguridad avanzada
+# pyudev>=0.24.0  # Para detección avanzada de dispositivos USB (Linux)
+
+# Dependencias de desarrollo (opcional):
+# pytest>=7.4.0  # Para testing
+# black>=23.0.0  # Para formateo de código
+# flake8>=6.1.0  # Para linting
+# pylint>=3.0.0  # Para análisis estático
+
+# NOTA: Este archivo se mantiene intencionalmente minimalista para
+# garantizar que el sistema pueda ejecutarse en cualquier distribución
+# Linux con Python 3.6+ sin necesidad de instalar paquetes adicionales.
+

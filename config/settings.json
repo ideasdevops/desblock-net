@@ -1,0 +1,84 @@
+{
+  "app": {
+    "name": "DESBLOCK-NET",
+    "version": "1.0.0",
+    "description": "Sistema de desbloqueo para equipos Conectar Igualdad",
+    "author": "Comunidad DESBLOCK-NET",
+    "license": "MIT"
+  },
+  "gui": {
+    "theme": "dark",
+    "window_size": {
+      "width": 700,
+      "height": 650
+    },
+    "colors": {
+      "background": "#2c3e50",
+      "foreground": "#ecf0f1",
+      "accent": "#3498db",
+      "success": "#27ae60",
+      "error": "#e74c3c",
+      "warning": "#f39c12"
+    },
+    "fonts": {
+      "title": ["Arial", 24, "bold"],
+      "subtitle": ["Arial", 11],
+      "normal": ["Arial", 10],
+      "code": ["Courier", 11]
+    }
+  },
+  "logging": {
+    "enabled": true,
+    "directory": "~/desblock-net-logs",
+    "format": "json",
+    "retention_days": 90,
+    "anonymize_data": true,
+    "fields_to_log": [
+      "timestamp",
+      "year",
+      "server",
+      "hardware_id_partial",
+      "boot_mark_partial",
+      "unlock_code",
+      "version"
+    ]
+  },
+  "security": {
+    "require_confirmation": true,
+    "show_warnings": true,
+    "validate_input": true,
+    "max_attempts": 5,
+    "timeout_seconds": 300
+  },
+  "usb_creation": {
+    "default_iso": "linuxmint-22-cinnamon-64bit.iso",
+    "min_usb_size_gb": 7,
+    "verify_checksum": true,
+    "auto_update_iso": false
+  },
+  "network": {
+    "check_connectivity": true,
+    "timeout_seconds": 10,
+    "retry_attempts": 3,
+    "test_urls": [
+      "https://tds.educacion.gob.ar",
+      "https://citd.dgp.educ.ar",
+      "https://conectarigualdad.gob.ar"
+    ]
+  },
+  "features": {
+    "enable_gui": true,
+    "enable_cli": true,
+    "enable_logging": true,
+    "enable_auto_update": false,
+    "show_statistics": true,
+    "export_codes": true
+  },
+  "advanced": {
+    "debug_mode": false,
+    "verbose_output": false,
+    "performance_mode": false,
+    "backup_logs": true
+  }
+}
+

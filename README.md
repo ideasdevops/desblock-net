@@ -161,5 +161,5 @@ Para problemas, sugerencias o consultas:
 
 ---
 
-**Desarrollado con ❤️ para ayudar a la comunidad educativa argentina**
+**Desarrollado con ❤️ por IdeasDevOps para ayudar a la comunidad educativa argentina**
 

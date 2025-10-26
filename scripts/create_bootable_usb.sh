@@ -132,31 +132,31 @@ download_iso() {
     
     # Verificar si ya existe la ISO
     if [ -f "$iso_path" ]; then
-        print_info "ISO encontrada: $iso_path"
+        print_info "ISO encontrada: $iso_path" >&2
         
         # Verificar integridad básica
         local size=$(stat -f%z "$iso_path" 2>/dev/null || stat -c%s "$iso_path" 2>/dev/null)
         if [ "$size" -gt $((2 * 1024 * 1024 * 1024)) ]; then
-            print_success "ISO válida encontrada"
+            print_success "ISO válida encontrada" >&2
             echo "$iso_path"
             return 0
         else
-            print_warning "ISO corrupta o incompleta, descargando nuevamente..."
+            print_warning "ISO corrupta o incompleta, descargando nuevamente..." >&2
             rm -f "$iso_path"
         fi
     fi
     
     # Descargar ISO
-    print_info "Descargando Linux Mint ISO..."
-    print_info "URL: $ISO_URL"
-    print_warning "Esto puede tardar varios minutos dependiendo de su conexión"
+    print_info "Descargando Linux Mint ISO..." >&2
+    print_info "URL: $ISO_URL" >&2
+    print_warning "Esto puede tardar varios minutos dependiendo de su conexión" >&2
     
-    if wget --progress=bar:force -O "$iso_path" "$ISO_URL"; then
-        print_success "ISO descargada exitosamente"
+    if wget --progress=bar:force -O "$iso_path" "$ISO_URL" >&2; then
+        print_success "ISO descargada exitosamente" >&2
         echo "$iso_path"
         return 0
     else
-        print_error "Error al descargar la ISO"
+        print_error "Error al descargar la ISO" >&2
         rm -f "$iso_path"
         return 1
     fi
